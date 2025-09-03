@@ -16,7 +16,7 @@ Additionally, the sensor can detect touch through materials such as plastic or p
 
 When the sensor detects touch, the LED light located at the bottom-left corner of the metal surface will illuminate, indicating that human or metal contact has been detected.
 
-<img src="../_static/media/chapter_1/image3.png" class="common_img" />
+<img src="../_static/media/chapter_1/image3.png" class="common_img" style="width:150px;"/>
 
 When the metal surface is touched, the LED light at the bottom-left corner will light up, signaling that contact with either a human or metal object has been detected.
 
