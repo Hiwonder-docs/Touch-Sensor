@@ -20,32 +20,35 @@ Connect the touch sensor to the controller using the DuPont wire as below.
 
 ### 3.1.2 Environment Configuration
 
-Install the NoMachine on your computer. The installation package is located under "**[2 Software Tools & Program Collection -&gt; 01 Software Installation Packages -&gt; Remote Desktop Installation Tool.](Appendix.md)**" For detailed instructions on using the NoMachine, please refer to the corresponding directory.
+Install the NoMachine on your computer. The installation package is located under "**[2 Remote Desktop Installation Tool.](Appendix.md)**" For detailed instructions on using the NoMachine, please refer to the corresponding directory.
 
 Transfer the program and the SDK library files to the Raspberry Pi system image. For this example, we'll place them on the desktop. Note: Ensure that the library files are in the same directory as the program.
 
 Next, open the terminal and use the following command to navigate to the directory containing the program: 
-sudo chmod a+x Sensor_Demo
 
-<img src="../_static/media/chapter_3/image5.png" class="common_img" />
+```bash
+sudo chmod a+x Sensor_Demo
+```
 
 ## 3.2 Test Case
+
+[source code](../_static/source_code/TouchSensorDemo.zip)
 
 The case displays the status detected by the touch sensor through the terminal window.
 
 ### 3.2.1 Program Download
 
-* **Next, open the terminal and use the following command to navigate to the directory containing the program:** 
+Next, open the terminal and use the following command to navigate to the directory containing the program: 
 
 ```bash
-  cd Desktop/Sensor_Demo/
+cd Desktop/Sensor_Demo/
 ```
 
-<img src="../_static/media/chapter_3/image6.png" class="common_img" />
+Enter the following command to run the program for this example: 
 
-* **Enter the following command to run the program for this example: python3 TouchSensorDemo.py**
-
-<img src="../_static/media/chapter_3/image7.png" class="common_img" />
+```bash
+python3 TouchSensorDemo.py
+```
 
 ### 3.2.2 Program Outcome
 

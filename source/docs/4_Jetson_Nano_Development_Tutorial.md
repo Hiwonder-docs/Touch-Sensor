@@ -14,25 +14,29 @@ Connect the touch sensor to the controller using the DuPont wire as below.
 
 ### 4.1.2 Environment Configuration
 
-Install the NoMachine on your computer. The installation package is located under **"[2 Software Tools & Program Collection -&gt; 01 Software Installation Packages -&gt; Remote Desktop Installation Tool](Appendix.md)".** For detailed instructions on using the NoMachine, please refer to the corresponding directory.
+Install the NoMachine on your computer. The installation package is located under **"[2 Remote Desktop Installation Tool](Appendix.md)".** For detailed instructions on using the NoMachine, please refer to the corresponding directory.
 
 Transfer the program into the Jetson Nano system image. For this example, we’ll place it on the desktop.
 
 ## 4.2 Test Case
 
+[source code](../_static/source_code/touch_sensor.zip)
+
 This example displays the status detected by the touch sensor in the terminal window of the Jetson system.
 
 ### 4.2.1 Program Download
 
-1.  Next, open the terminal and use the following command to navigate to the directory containing the program: 
+Next, open the terminal and use the following command to navigate to the directory containing the program: 
 
-**"cd Desktop/Sensor_Demo/"**
+```bash
+cd Desktop/
+```
 
-<img src="../_static/media/chapter_4/image5.png" class="common_img" />
+Enter the following command to run the program for this example: 
 
-2.  Enter the following command to run the program for this example: **"python3 touch_sensor.py"**
-
-<img src="../_static/media/chapter_4/image6.png" class="common_img" />
+```bash
+python3 touch_sensor.py
+```
 
 ### 4.2.2 Program Outcome
 
@@ -68,6 +72,13 @@ The GPIO pins are initialized with the mode set to BCM. Pin 10, which is used by
 
 -   **Main Function**
 
-<img src="../_static/media/chapter_4/image5.png" class="common_img" />
+{lineno-start=19}
+
+```python
+    while True:
+        state = GPIO.input(10)
+        print("OUT:",state) #打印IO口信息
+        time.sleep(0.5) #500毫秒刷新一次按钮状态
+```
 
 In the while loop, the data from GPIO pin 10 is stored in the state variable. The value of state is then printed, and the output is refreshed every 0.5 seconds in a continuous loop.

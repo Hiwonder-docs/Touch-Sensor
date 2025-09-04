@@ -22,13 +22,15 @@ If you don't have an Arduino expansion board, you can directly connect the Ardui
 
 * Before powering up, double-check that no metal objects are touching the controller. If they do, it could cause a short circuit through the pins on the bottom and damage the board.
 
-  :::
+:::
 
 ### 2.1.2 Environment Configuration
 
-Install the Arduino IDE on your computer. The installation package is located under "**[2 Software Tools & Program Collection -&gt; 01 Software Installation Packages -&gt; Arduino Installation Package](Appendix.md)**." For detailed instructions on using the Arduino IDE, please refer to the corresponding directory.
+Install the Arduino IDE on your computer. The installation package is located under "**[2  Arduino Installation Package](Appendix.md)**." For detailed instructions on using the Arduino IDE, please refer to the corresponding directory.
 
 ## 2.2 Test Case
+
+[source code](../_static/source_code/Touch_Sensor_arduino.zip)
 
 The case displays the status detected by the touch sensor through the terminal window.
 

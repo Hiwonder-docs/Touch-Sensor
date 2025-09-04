@@ -32,7 +32,7 @@ When the metal surface is touched, the LED light at the bottom-left corner will 
 
 ## 1.3 Parameters Instruction
 
-For details about the chip used in this module, please refer to "**3. Chip Manual and Schematic**."
+For details about the chip used in this module, please refer to "**[3. Chip Manual and Schematic]()**"
 
 ### 1.3.1 Pin Description
 
