@@ -26,7 +26,7 @@ If you don't have an Arduino expansion board, you can directly connect the Ardui
 
 ### 2.1.2 Environment Configuration
 
-Install the Arduino IDE on your computer. The installation package is located under "**[2  Arduino Installation Package](Appendix.md)**." For detailed instructions on using the Arduino IDE, please refer to the corresponding directory.
+Install the Arduino IDE on your computer. The installation package is located under "**[Arduino Installation Package](Appendix.md)**." For detailed instructions on using the Arduino IDE, please refer to the corresponding directory.
 
 ## 2.2 Test Case
 

@@ -10,11 +10,11 @@ Connect the touch sensor to the controller using the DuPont wire as below.
 
 <img src="../_static/media/chapter_4/image4.png" class="common_img" />
 
-**Before powering up, double-check that no metal objects are touching the controller. If they do, it could cause a short circuit through the pins on the bottom and damage the board.**
+Before powering up, double-check that no metal objects are touching the controller. If they do, it could cause a short circuit through the pins on the bottom and damage the board.
 
 ### 4.1.2 Environment Configuration
 
-Install the NoMachine on your computer. The installation package is located under **"[2 Remote Desktop Installation Tool](Appendix.md)".** For detailed instructions on using the NoMachine, please refer to the corresponding directory.
+Install the NoMachine on your computer. The installation package is located under **"[Remote Desktop Installation Tool](Appendix.md)".** For detailed instructions on using the NoMachine, please refer to the corresponding directory.
 
 Transfer the program into the Jetson Nano system image. For this example, we’ll place it on the desktop.
 
@@ -63,7 +63,7 @@ Import the necessary library files for the program, including system libraries, 
 {lineno-start=15}
 
 ```python
-    #初始化io口
+    #Initialize IO ports
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(10, GPIO.IN)
 ```
@@ -77,8 +77,8 @@ The GPIO pins are initialized with the mode set to BCM. Pin 10, which is used by
 ```python
     while True:
         state = GPIO.input(10)
-        print("OUT:",state) #打印IO口信息
-        time.sleep(0.5) #500毫秒刷新一次按钮状态
+        print("OUT:",state) #Print IO port information
+        time.sleep(0.5) #Refresh button status every 500 milliseconds
 ```
 
 In the while loop, the data from GPIO pin 10 is stored in the state variable. The value of state is then printed, and the output is refreshed every 0.5 seconds in a continuous loop.

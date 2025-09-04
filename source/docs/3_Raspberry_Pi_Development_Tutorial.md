@@ -20,7 +20,7 @@ Connect the touch sensor to the controller using the DuPont wire as below.
 
 ### 3.1.2 Environment Configuration
 
-Install the NoMachine on your computer. The installation package is located under "**[2 Remote Desktop Installation Tool.](Appendix.md)**" For detailed instructions on using the NoMachine, please refer to the corresponding directory.
+Install the NoMachine on your computer. The installation package is located under "**[Remote Desktop Installation Tool.](Appendix.md)**" For detailed instructions on using the NoMachine, please refer to the corresponding directory.
 
 Transfer the program and the SDK library files to the Raspberry Pi system image. For this example, we'll place them on the desktop. Note: Ensure that the library files are in the same directory as the program.
 

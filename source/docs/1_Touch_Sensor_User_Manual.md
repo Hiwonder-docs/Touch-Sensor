@@ -22,17 +22,17 @@ When the metal surface is touched, the LED light at the bottom-left corner will 
 
 ## 1.2 Notice
 
-* **Do not exceed the specified voltage range during use.**
+(1) Do not exceed the specified voltage range during use.
 
-* **The sensor only detects conductive materials such as the human body or metal. It will not respond to non-conductive materials.**
+(2) The sensor only detects conductive materials such as the human body or metal. It will not respond to non-conductive materials.
 
-* **Touching the sensor through materials like plastic or paper is possible, but the thickness of the covering material should be minimal. Otherwise, the sensor may fail to detect the touch.**
+(3) Touching the sensor through materials like plastic or paper is possible, but the thickness of the covering material should be minimal. Otherwise, the sensor may fail to detect the touch.
 
-* **The sensitivity of the sensor is affected by the size of the contact surface and the thickness of the covering material. Ensure that the contact area is appropriately sized for optimal detection.**
+(4) The sensitivity of the sensor is affected by the size of the contact surface and the thickness of the covering material. Ensure that the contact area is appropriately sized for optimal detection.
 
 ## 1.3 Parameters Instruction
 
-For details about the chip used in this module, please refer to "**[3. Chip Manual and Schematic]()**"
+For details about the chip used in this module, please refer to "**[Chip Manual and Schematic](../_static/source_code/Chip_User_Manual_Schematic.zip)**"
 
 ### 1.3.1 Pin Description
 
