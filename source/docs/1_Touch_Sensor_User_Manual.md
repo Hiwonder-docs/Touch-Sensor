@@ -1,6 +1,6 @@
 # 1. Touch Sensor User Manual
 
-<img src="../_static/media/chapter_1/image2.png" class="common_img" style="width:350px;"/>
+<img src="../_static/media/chapter_1/image2.png" class="common_img" style="width:300px;"/>
 
 ## 1.1 Introduction to Touch Sensor
 
@@ -112,4 +112,4 @@ In this test, we use the touch sensor to detect whether there is any contact wit
 
 When the sensor is touched by a finger, it outputs a low voltage through the OUT pin. At this point, LED1 will light up, and the serial monitor will display **"0."**
 
-<img src="../_static/media/chapter_1/image4.png" class="common_img" />
+<img src="../_static/media/chapter_1/image4.png" class="common_img" style="width:500px;" />

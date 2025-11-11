@@ -1,6 +1,6 @@
 # 3. Raspberry Pi Development Tutorial
 
-<img src="../_static/media/chapter_3/image3.png" class="common_img" style="width:350px;"/>
+<img src="../_static/media/chapter_3/image3.png" class="common_img" style="width:300px;"/>
 
 ## 3.1 Preparation
 
@@ -8,15 +8,13 @@
 
 Connect the touch sensor to the controller using the DuPont wire as below.
 
-<img src="../_static/media/chapter_3/image4.png" class="common_img" />
+<img src="../_static/media/chapter_3/image4.png" class="common_img" style="width:500px;" />
 
-:::{Note}
-
-* If you're using our lithium battery, make sure to connect the red wire to the + and the black wire to the - on the DC port.
-
-* If you're not using a battery, don’t connect the battery wires directly to the battery terminals to avoid a short circuit.
-
-:::
+> [!NOTE]
+>
+> * **If you're using our lithium battery, make sure to connect the red wire to the + and the black wire to the - on the DC port.**
+>
+> * **If you're not using a battery, don’t connect the battery wires directly to the battery terminals to avoid a short circuit.**
 
 ### 3.1.2 Environment Configuration
 
@@ -31,8 +29,6 @@ sudo chmod a+x Sensor_Demo
 ```
 
 ## 3.2 Test Case
-
-[source code](../_static/source_code/TouchSensorDemo.zip)
 
 The case displays the status detected by the touch sensor through the terminal window.
 
@@ -55,13 +51,11 @@ python3 TouchSensorDemo.py
 We use the touch sensor to monitor its touch detection. At first, when the metal surface isn't touched, the sensor doesn't detect any input, and the terminal window shows **"1"** .
 Once you touch the metal surface with your finger, the sensor detects the touch, the LED1 lights up, and the terminal window shows **"0"**.
 
-<img src="../_static/media/chapter_3/image8.png" class="common_img" />
+<img src="../_static/media/chapter_3/image8.png" class="common_img" style="width:300px;" />
 
 ## 3.3 Brief Program Analysis
 
 -   **Library Files Import**
-
-{lineno-start=2}
 
 ```python
 import os
@@ -73,8 +67,6 @@ import RPi.GPIO as GPIO
 Import the necessary library files for the program, including system libraries, the delay library, and the GPIO library.
 
 -   **Serial Port Initialization**
-
-{lineno-start=7}
 
 ```python
 GPIO.setwarnings(False)
@@ -88,8 +80,6 @@ if sys.version_info.major == 2:
 In this step, the GPIO pins are initialized, and the GPIO mode is set to BCM mode.
 
 -   **Main Function**
-
-{lineno-start=5}
 
 ```python
 while True:

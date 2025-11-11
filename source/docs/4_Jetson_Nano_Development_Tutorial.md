@@ -1,6 +1,6 @@
 # 4. Jetson Nano Development Tutorial
 
-<img src="../_static/media/chapter_4/image3.png" class="common_img" style="width:350px;"/>
+<img src="../_static/media/chapter_4/image3.png" class="common_img" style="width:300px;"/>
 
 ## 4.1 Preparation
 
@@ -8,7 +8,7 @@
 
 Connect the touch sensor to the controller using the DuPont wire as below.
 
-<img src="../_static/media/chapter_4/image4.png" class="common_img" />
+<img src="../_static/media/chapter_4/image4.png" class="common_img" style="width:700px;"/>
 
 Before powering up, double-check that no metal objects are touching the controller. If they do, it could cause a short circuit through the pins on the bottom and damage the board.
 
@@ -19,8 +19,6 @@ Install the NoMachine on your computer. The installation package is located unde
 Transfer the program into the Jetson Nano system image. For this example, we’ll place it on the desktop.
 
 ## 4.2 Test Case
-
-[source code](../_static/source_code/touch_sensor.zip)
 
 This example displays the status detected by the touch sensor in the terminal window of the Jetson system.
 
@@ -43,13 +41,11 @@ python3 touch_sensor.py
 We use the touch sensor to monitor its touch detection. At first, when the metal surface isn't touched, the sensor doesn't detect any input, and the terminal window shows **"1"** 
 Once you touch the metal surface with your finger, the sensor detects the touch, the LED1 lights up, and the terminal window shows **"0"**.
 
-<img src="../_static/media/chapter_4/image7.png" class="common_img" />
+<img src="../_static/media/chapter_4/image7.png" class="common_img" style="width:400px;"/>
 
 ### 4.2.3 Brief Program Analysis
 
 -   **Library Files Import**
-
-{lineno-start=3}
 
 ```python
 import Jetson.GPIO as GPIO
@@ -60,8 +56,6 @@ Import the necessary library files for the program, including system libraries, 
 
 -   **Serial Port Initialization**
 
-{lineno-start=15}
-
 ```python
     #Initialize IO ports
     GPIO.setmode(GPIO.BCM)
@@ -71,8 +65,6 @@ Import the necessary library files for the program, including system libraries, 
 The GPIO pins are initialized with the mode set to BCM. Pin 10, which is used by the touch sensor module, is configured as an input.
 
 -   **Main Function**
-
-{lineno-start=19}
 
 ```python
     while True:
