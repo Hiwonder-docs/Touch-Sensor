@@ -65,7 +65,7 @@ For details about the chip used in this module, please refer to "**[Chip Manual 
   </tbody>
 </table>
 
-## 1.3.2 Specification
+### 1.3.2 Specification
 
 <table class="docutils-nobg" border="1">
   <tr>
